@@ -1,7 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import PageLayout from '../components/PageLayout';
-
-const Intro : React.FC = () => {
+type IntroPageProps = {
+    test: string;
+}
+const Intro : React.FC <IntroPageProps> = ( props ) => {
+        
         return (
             <div>Intro</div>
         )
