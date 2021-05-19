@@ -1,20 +1,13 @@
 import React, {useEffect, useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from '../styled/global-style';
-
-import { theme } from '../styled/theme';
-
-const App : React.FC = ( { } )  => {
-    const [testState, setTestState] = useState<string>("init")
- 
+type IndexPageProps = {
+    isMobile: boolean; 
+}
+const App : React.FC <IndexPageProps> = ( { isMobile } )  => {
     return(
         <>  
-            {/*  <> = <React.Fragment> */}
-            <ThemeProvider theme ={theme} >
-            <GlobalStyle />
-            <div>myblog - {testState}</div>    
-            </ThemeProvider>
-
+            <div>myblog</div>    
         </>
     )
 }

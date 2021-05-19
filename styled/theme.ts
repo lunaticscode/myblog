@@ -1,12 +1,7 @@
-import { DefaultTheme } from 'styled-components';
+import { css, ThemedStyledInterface } from 'styled-components';
 
-const theme:DefaultTheme = {
-    basicWidth: "320px",
-  
-    color: {
-      main: "#1c1f25",
-      sub: "#fff"
-    }
-};
-
-export { theme }
+const sizes = {
+  desktop: 1167,
+  tablet: 778,
+  phone: 576,
+}

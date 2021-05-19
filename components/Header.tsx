@@ -3,9 +3,9 @@ import React, {useEffect, useState} from 'react';
 const Header : React.FC = () => {
 
     return(
-        <React.Fragment>
-            humanwater
-        </React.Fragment>
+        <>
+            <div>HEADER</div>
+        </>
     )
 }
 export default Header;
