@@ -7,7 +7,6 @@ type IndexPageProps = {
     isMobile: boolean;
 }
 const App : React.FC <IndexPageProps> = ( { isMobile } )  => {
-    console.log(isMobile);
     return(
         <>  
             <div>index</div>    

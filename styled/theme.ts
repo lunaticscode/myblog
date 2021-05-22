@@ -15,9 +15,23 @@ const colors = {
     }
 }
 
+const mainColor = "#e54242"
+
 const headerHeight = '60px';
-const footerHeight = '90px';
-const footerBackColor = '#454545';
+const headerTitleColor = mainColor;
+
+const headerMenuColor = 'silver';
+const headerMenuActiveColor = 'black';
+
+const footerHeight = '60px';
+const footerBackColor = mainColor;
 const footerFontColor = '#eeeeee';
 
-module.exports = { sizes, colors, headerHeight, footerHeight, footerBackColor, footerFontColor }
+module.exports = { 
+    sizes, colors, 
+    mainColor,
+    headerHeight,
+    headerTitleColor, 
+    headerMenuColor, headerMenuActiveColor, 
+    footerHeight, footerBackColor, footerFontColor 
+}
