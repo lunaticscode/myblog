@@ -19,9 +19,14 @@ const _HeaderTitle = styled.div`
     font-size: 20px;
     font-weight:1000;
     margin-left:10px;
-    margin-top:-5px; 
+    margin-top:-5px;
+    opacity : 0.7;
     &:hover{
         cursor: pointer;
+        opacity: 1;
+    }
+    span{
+        color:gray;
     }
 `
 
@@ -53,7 +58,6 @@ const _HeaderMenu = styled.div<_HeaderMenuProps>`
         font-weight: 600;
     `}
 `
-console.log(_HeaderMenu);
 
 const _SearchButton = styled.div`
     font-family: initial;

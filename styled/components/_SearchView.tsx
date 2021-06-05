@@ -18,7 +18,14 @@ const _SearchViewLayout = styled.div<_SearchViewLayoutProps>`
     `}
     
 `
-
+const _SearchViewCloseBtn = styled.div`
+// color:'white', position:'absolute', top:'20px', right:'20px',
+    color: white;
+    position: absolute; top: 20px; right:20px;
+    &:hover{
+        cursor: pointer;
+    }
+`
 interface _SearchViewInputProps {
     active: boolean;
 }
@@ -45,4 +52,4 @@ const _SearchViewInput = styled.input<_SearchViewInputProps>`
 `
 
 
-module.exports = { _SearchViewLayout, _SearchViewInput }
+module.exports = { _SearchViewLayout, _SearchViewCloseBtn, _SearchViewInput }

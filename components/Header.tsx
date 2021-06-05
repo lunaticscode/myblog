@@ -27,7 +27,11 @@ const Header : React.FC<HeaderProps> = ( { setSearchViewVisible } ) => {
     return(
         <>
         <_HeaderLayout>
-            <_HeaderTitle onClick={() => { location.href='/' }} >{ HEADER_TITLE }</_HeaderTitle>
+            <_HeaderTitle onClick={() => { location.href='/' }} >
+                <span>{"<"}</span>
+                { HEADER_TITLE }
+                <span>{"/>"}</span>
+            </_HeaderTitle>
             {
                 ( HEADER_MENUS.length )
                 ?

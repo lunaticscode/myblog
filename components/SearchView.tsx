@@ -1,13 +1,9 @@
 import React, {useEffect, useState} from 'react';
-const { _SearchViewLayout, _SearchViewInput } = require('../styled/components/_SearchView')
+const { _SearchViewLayout, _SearchViewInput, _SearchViewCloseBtn } = require('../styled/components/_SearchView')
 
 interface SearchViewProps {
     isVisible: boolean;
     setUnvisible: () => void;
-}
-
-const SearchViewCloseBtnStyle:object = {
-    color:'white', position:'absolute', top:'0px', left:'0px',
 }
 
 const SearchView:React.FC<SearchViewProps> = ( { isVisible, setUnvisible } ) => {
@@ -28,12 +24,11 @@ const SearchView:React.FC<SearchViewProps> = ( { isVisible, setUnvisible } ) => 
         <_SearchViewLayout
             visible = { isVisible }
         >
-                <div
-                    style={SearchViewCloseBtnStyle}
-                    onClick={ () => setUnvisible() }
+                <_SearchViewCloseBtn
+                     onClick={ () => setUnvisible() }
                 >
                     닫기
-                </div>
+                </_SearchViewCloseBtn>
                 <_SearchViewInput
                     placeholder={ "검색어를 입력해주세요." }
                     active = { ( inputValue.length ) ? true : false }
