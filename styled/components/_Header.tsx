@@ -10,6 +10,7 @@ const _HeaderLayout = styled.div`
  box-shadow: 0px 2px 2px #eeeeee;
  font-family: 'Syne Mono', monospace;
  display: flex;
+ width:100%;
 `
 
 const _HeaderTitle = styled.div`
@@ -20,10 +21,9 @@ const _HeaderTitle = styled.div`
     font-weight:1000;
     margin-left:10px;
     margin-top:-5px;
-    opacity : 0.7;
+    opacity : 1;
     &:hover{
         cursor: pointer;
-        opacity: 1;
     }
     span{
         color:gray;
@@ -33,10 +33,10 @@ const _HeaderTitle = styled.div`
 const _HeaderMenuLayout = styled.div`
     font-family: initial;
     display: inline-flex;
-    width:70%;
-    max-width: 500px;
+    width:100%;
+    //max-width: 500px;
     align-items: center;
-    justify-content: space-around;
+    //justify-content: space-around;
 `
 
 interface _HeaderMenuProps {
@@ -46,9 +46,10 @@ const _HeaderMenu = styled.div<_HeaderMenuProps>`
     display: inline-block;
     color: ${headerMenuColor};
     padding:0px 5px;
+    margin-left: 50px;
     font-weight: 400;
     &:hover{
-        color:black;
+        color:${headerTitleColor};
         cursor: pointer;
         font-weight: 600;
     }
@@ -62,7 +63,8 @@ const _HeaderMenu = styled.div<_HeaderMenuProps>`
 const _SearchButton = styled.div`
     font-family: initial;
     display: inline-flex;
-    margin-left:50px; 
+    //margin-left:50px; 
+    margin-right:20px;
     align-items: center;
     width: 22px;
     color:silver;

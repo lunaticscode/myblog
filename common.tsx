@@ -1,13 +1,12 @@
 // 블로그 제목
-const HEADER_TITLE:string = "Humanwater";
+export const HEADER_TITLE: string = "humanwater";
 
 // 블로그 헤더 메뉴
 interface headerMenusElemInterface {    
     title: string,
     link: string,
 }
-
-const HEADER_MENUS:Array<headerMenusElemInterface> = [ 
+export const HEADER_MENUS:Array<headerMenusElemInterface> = [ 
     {
         title: "Intro",
         link: "/intro",
@@ -23,6 +22,5 @@ const HEADER_MENUS:Array<headerMenusElemInterface> = [
 ];
 
 module.exports = { 
-        HEADER_TITLE,
-        HEADER_MENUS,
+        HEADER_TITLE, HEADER_MENUS,
 }

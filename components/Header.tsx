@@ -23,7 +23,7 @@ const Header : React.FC<HeaderProps> = ( { setSearchViewVisible } ) => {
     useEffect( () => {
         setNowPath( location.pathname );
     })
-
+    
     return(
         <>
         <_HeaderLayout>
@@ -53,12 +53,13 @@ const Header : React.FC<HeaderProps> = ( { setSearchViewVisible } ) => {
                 
                 :""
             }
-            <_SearchButton
+        <_SearchButton
                 onClick ={ () => setSearchViewVisible() }
             >
                 <img src ="/images/search.png" alt="insoo" style={{width:'100%'}} />
-            </_SearchButton>
+        </_SearchButton>
         </_HeaderLayout>
+       
      
         </>
     )
